@@ -1,4 +1,9 @@
-***MY PC BUILD*** <br><br>
+**MY PC BUILD** <br><br>
+
+*Found specs using Windows PowerShell with command*  ```Get-ComputerInfo``` <br>
+*and using* ```Device Manager and Task Manager``` <br><br>
+___________________________________
+
 **OS** <br>
 <img width="670" height="15" alt="Image" src="https://github.com/user-attachments/assets/67e3c3f6-d234-4bc1-8f09-c9fd9a632388" /> <br>
 ```Windows 11 Home x64-based processor```
@@ -15,7 +20,7 @@
 **RAM** <br>
 <img width="171" height="20" alt="Image" src="https://github.com/user-attachments/assets/f7734361-9ab4-4112-9ae0-80fb51e2016d" /> <br>
 <img width="176" height="14" alt="pc ram speed" src="https://github.com/user-attachments/assets/143a6a93-2176-4394-99b7-8e496fa6a25f" /> <br>
-```1 DDR5 16 GB```
+```1 DDR5 16GB```
 <br><br>
 **STORAGE** <br>
 <img width="84" height="63" alt="Image" src="https://github.com/user-attachments/assets/7efecfe1-0f21-41da-a5e9-83d66a651be7" /> <br>
@@ -36,7 +41,16 @@ ________________________________________
 ![pc external 1](https://github.com/user-attachments/assets/e760d826-690e-44f5-82fd-43c28c9573af)
 ![pc external 2](https://github.com/user-attachments/assets/0141403a-094e-40ac-bcf1-3c2a89999ce6)
 
-
+_________________________________________
+External Internal Connector Map
+| Port / Connector | Location | Purpose | Common Issues |
+| --- | --- | --- | --- |
+| USB-C |	Top/Rear |	Data, Power, Video |Wrong cable (non-Thunderbolt) |
+| HDMI | Top/Rear |	External display | Physical damage (loose port, bent pins) |
+|DisplayPort | Rear | External Display | "No signal" message by incorrect input |
+| Ethernet (RJ-45) |	Rear |	Wired networking	| Bent pins / driver issues |
+|RAM Slot |	Internal | Memory expansion	| Improper seating |
+| NVMe Slot |	Internal | Primary storage	| Thermal Throttling/Disconnection |
 
 
 
