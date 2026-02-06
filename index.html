@@ -558,35 +558,24 @@
         <section class="hero">
           <div class="title">
             <h2 id="article-title">My PC Build</h2>
-            <div class="meta">
-              <span class="chip"><b>Audience:</b> Students</span>
-              <span class="chip"><b>System:</b> Windows (64-bit)</span>
-              <span class="chip"><b>Last reviewed:</b> 2026-02-05</span>
-            </div>
+  
           </div>
 
           <p id="article-summary">
-            Document your computer’s <b>OS</b>, <b>CPU</b>, <b>RAM</b>, <b>Storage</b>, and <b>GPU</b> using both
-            <b>GUI</b> (settings/task manager/system info) and <b>CLI</b> (PowerShell). Include screenshots and
-            paste the command output as evidence.
+           Found specs using Windows PowerShell commands <br>
+and using Device Manager and Task Manager <br>
           </p>
         </section>
 
         <div class="content" id="content">
           <div class="divider"></div>
 
-          <h3 id="purpose">Purpose</h3>
-          <p>
-            Create a clean “PC Snapshot” that someone else could use to understand your system hardware and verify it
-            using command-line tools.
-          </p>
-
           <h3 id="pc-snapshot">My PC Snapshot</h3>
 
           <!-- Image Carousel -->
           <section class="carousel" id="imgCarousel" aria-label="PC build screenshots carousel">
             <div class="carousel-top">
-              <strong>Screenshots</strong>
+              <strong>My PC Build</strong>
               <div class="carousel-controls">
                 <button class="carousel-btn" type="button" id="carPrev" aria-label="Previous screenshot">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 6.4L10.8 11l4.6 4.6-1.4 1.4L8 11l6-6 1.4 1.4z"/></svg>
@@ -606,14 +595,19 @@
                   <div class="carousel-cap">OS (Windows 11 Home, 64-bit)</div>
                 </div>
 
+                 <div class="carousel-slide">
+                  <img width="736" height="32" alt="Image" src="https://github.com/user-attachments/assets/37bdf08a-7a9c-4231-8d35-b03c787445d9" />
+                  <div class="carousel-cap">Make and Manufacturer (HP OMEN 35L Gaming Desktop GT-0xxx)</div>
+                </div>
+
                 <div class="carousel-slide">
                   <img alt="CPU screenshot (part 1)" src="https://github.com/user-attachments/assets/c3be344b-4313-4202-bf4b-36f3700e0da7" />
-                  <div class="carousel-cap">CPU (screenshot 1)</div>
+                  <div class="carousel-cap">CPU (AMD Ryzen 5 8400F 6-Core Processor 4.20 GHz) </div>
                 </div>
 
                 <div class="carousel-slide">
                   <img alt="CPU screenshot (part 2)" src="https://github.com/user-attachments/assets/c58adeb4-2bf2-45ba-876a-1d959d6cdf6f" />
-                  <div class="carousel-cap">CPU (screenshot 2)</div>
+                  <div class="carousel-cap">CPU (6 Core 12 Thread)</div>
                 </div>
 
                 <div class="carousel-slide">
@@ -633,12 +627,12 @@
 
                 <div class="carousel-slide">
                   <img alt="GPU screenshot (part 1)" src="https://github.com/user-attachments/assets/4c94c8ab-cd72-4dfc-ba72-b4e95a6dbecc" />
-                  <div class="carousel-cap">GPU (screenshot 1)</div>
+                  <div class="carousel-cap">GPU (NVIDIA GeForce RTX 5060)</div>
                 </div>
 
                 <div class="carousel-slide">
                   <img alt="GPU screenshot (part 2)" src="https://github.com/user-attachments/assets/885af8dc-78e7-433c-8a6a-1193dcaba3bc" />
-                  <div class="carousel-cap">GPU (screenshot 2)</div>
+                  <div class="carousel-cap">GPU (compacity)</div>
                 </div>
               </div>
             </div>
@@ -646,56 +640,47 @@
             <div class="carousel-dots" id="carDots" aria-label="Screenshot selection dots"></div>
           </section>
 
-          <table aria-label="System snapshot table">
-            <thead>
-              <tr>
-                <th>Component</th>
-                <th>Details</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><b>OS</b></td>
-                <td>
-                  <img width="670" height="15" alt="Image" src="https://github.com/user-attachments/assets/67e3c3f6-d234-4bc1-8f09-c9fd9a632388" />
-                  <pre><button class="copy-btn" type="button" data-copy><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H6a2 2 0 00-2 2v12h2V3h10V1zm3 4H10a2 2 0 00-2 2v14a2 2 0 002 2h9a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H10V7h9v14z"/></svg><span>Copy</span></button><code>Windows 11 Home
-x64-based processor
-64-Bit</code></pre>
-                </td>
-              </tr>
-              <tr>
-                <td><b>CPU</b></td>
-                <td>
-                  <img width="174" height="72" alt="Image" src="https://github.com/user-attachments/assets/c3be344b-4313-4202-bf4b-36f3700e0da7" /><br>
-                  <img width="479" height="22" alt="Image" src="https://github.com/user-attachments/assets/c58adeb4-2bf2-45ba-876a-1d959d6cdf6f" />
-                  <pre><button class="copy-btn" type="button" data-copy><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H6a2 2 0 00-2 2v12h2V3h10V1zm3 4H10a2 2 0 00-2 2v14a2 2 0 002 2h9a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H10V7h9v14z"/></svg><span>Copy</span></button><code>AMD Ryzen 5 8400F 6-Core Processor (4.20 GHz) / 6 Core 12 Thread</code></pre>
-                </td>
-              </tr>
-              <tr>
-                <td><b>RAM</b></td>
-                <td>
-                  <img width="171" height="20" alt="Image" src="https://github.com/user-attachments/assets/f7734361-9ab4-4112-9ae0-80fb51e2016d" /> <br>
-                  <img width="176" height="14" alt="pc ram speed" src="https://github.com/user-attachments/assets/143a6a93-2176-4394-99b7-8e496fa6a25f" />
-                  <pre><button class="copy-btn" type="button" data-copy><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H6a2 2 0 00-2 2v12h2V3h10V1zm3 4H10a2 2 0 00-2 2v14a2 2 0 002 2h9a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H10V7h9v14z"/></svg><span>Copy</span></button><code>1 DDR5 16GB</code></pre>
-                </td>
-              </tr>
-              <tr>
-                <td><b>Storage</b></td>
-                <td>
-                  <img width="84" height="63" alt="Image" src="https://github.com/user-attachments/assets/7efecfe1-0f21-41da-a5e9-83d66a651be7" />
-                  <pre><button class="copy-btn" type="button" data-copy><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H6a2 2 0 00-2 2v12h2V3h10V1zm3 4H10a2 2 0 00-2 2v14a2 2 0 002 2h9a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H10V7h9v14z"/></svg><span>Copy</span></button><code>SSD NMVe 954GB</code></pre>
-                </td>
-              </tr>
-              <tr>
-                <td><b>GPU</b></td>
-                <td>
-                  <img width="187" height="36" alt="Image" src="https://github.com/user-attachments/assets/4c94c8ab-cd72-4dfc-ba72-b4e95a6dbecc" /> <br>
-                  <img width="244" height="45" alt="Image" src="https://github.com/user-attachments/assets/885af8dc-78e7-433c-8a6a-1193dcaba3bc" />
-                  <pre><button class="copy-btn" type="button" data-copy><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H6a2 2 0 00-2 2v12h2V3h10V1zm3 4H10a2 2 0 00-2 2v14a2 2 0 002 2h9a2 2 0 002-2V7a2 2 0 00-2-2zm0 16H10V7h9v14z"/></svg><span>Copy</span></button><code>NVIDIA GeForce RTX 5060</code></pre>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+            <!-- Image internal and external Carousel -->
+          <section class="carousel" id="imgCarousel" aria-label="PC build internal and external">
+            <div class="carousel-top">
+              <strong>Internal and external</strong>
+              <div class="carousel-controls">
+                <button class="carousel-btn" type="button" id="carPrev" aria-label="Previous screenshot">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 6.4L10.8 11l4.6 4.6-1.4 1.4L8 11l6-6 1.4 1.4z"/></svg>
+                  Prev
+                </button>
+                <button class="carousel-btn" type="button" id="carNext" aria-label="Next">
+                  Next
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.6 17.6L13.2 13 8.6 8.4 10 7l6 6-6 6-1.4-1.4z"/></svg>
+                </button>
+              </div>
+            </div>
+
+             <div class="carousel-viewport" tabindex="0" aria-label="Use arrow keys to navigate screenshots">
+              <div class="carousel-track" id="carTrack">
+                <div class="carousel-slide">
+                  <img alt="Internal" src="https://github.com/user-attachments/assets/65a84cfb-1111-4d47-915c-7327948a2fc0>Internal (part 1)</div>
+                </div>
+                     <div class="carousel-slide">
+                  <img alt="Internal" src="https://github.com/user-attachments/assets/6b3cb8de-4aa5-4a87-9b43-3cd4d73c1738" />
+                  <div class="carousel-cap">internal (part 2)</div>
+                </div>
+                <div class="carousel-slide">
+                  <img alt="Internal" src="https://github.com/user-attachments/assets/e760d826-690e-44f5-82fd-43c28c9573af" />
+                  <div class="carousel-cap">external (part 1)</div>
+                </div>
+                <div class="carousel-slide">
+                  <img alt="Internal" src="https://github.com/user-attachments/assets/6b3cb8de-4aa5-4a87-9b43-3cd4d73c1738" />
+                  <div class="carousel-cap">external (part 2)</div>
+                </div>
+                  </div>
+            </div>
+
+
+            <div class="carousel-dots" id="carDots" aria-label="Screenshot selection dots"></div>
+          </section>
+
+    
 
           <h3 id="how-to">How To</h3>
           <p>
