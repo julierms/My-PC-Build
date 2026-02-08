@@ -440,18 +440,28 @@
       padding: 0 3px;
     }
 
-     /* Custom cursors (SVG data-URI) */
-  --cursor-grab: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3E%3Cg%20fill='%23ffffff'%20stroke='%23000000'%20stroke-width='2'%20stroke-linejoin='round'%3E%3Crect%20x='8'%20y='4'%20width='4'%20height='12'%20rx='2'/%3E%3Crect%20x='13'%20y='3'%20width='4'%20height='13'%20rx='2'/%3E%3Crect%20x='18'%20y='4'%20width='4'%20height='12'%20rx='2'/%3E%3Crect%20x='23'%20y='6'%20width='4'%20height='10'%20rx='2'/%3E%3Crect%20x='10'%20y='14'%20width='16'%20height='14'%20rx='6'/%3E%3Crect%20x='4'%20y='15'%20width='10'%20height='6'%20rx='3'%20transform='rotate(-25%204%2015)'/%3E%3C/g%3E%3C/svg%3E") 16 6, grab;
 
-  --cursor-grabbing: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3E%3Cg%20fill='%23ffffff'%20stroke='%23000000'%20stroke-width='2'%20stroke-linejoin='round'%3E%3Crect%20x='10'%20y='7'%20width='16'%20height='9'%20rx='4'/%3E%3Crect%20x='10'%20y='14'%20width='16'%20height='14'%20rx='6'/%3E%3Crect%20x='4'%20y='16'%20width='10'%20height='6'%20rx='3'%20transform='rotate(-25%204%2016)'/%3E%3C/g%3E%3C/svg%3E") 16 6, grabbing;
+
+  .corner-boba{
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 9998;
+  pointer-events: none; /* doesn't block clicks */
 }
 
-/* Default cursor */
-body{ cursor: var(--cursor-grab); }
+.corner-boba svg{
+  width: 90px;            /* change size here */
+  height: auto;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,.18));
+}
 
-/* While mouse is held down */
-body.is-grabbing{ cursor: var(--cursor-grabbing); }
-
+/* Optional: smaller on phones */
+@media (max-width: 600px){
+  .corner-boba svg{ width: 70px; }
+}
+  
   </style>
 </head>
 
@@ -907,24 +917,43 @@ body.is-grabbing{ cursor: var(--cursor-grabbing); }
     tocLabel.textContent = tocCollapsed ? "Expand" : "Collapse";
   });
 
-  // Custom grabbing cursor toggle
-document.addEventListener("pointerdown", (e) => {
-  if (e.button === 0) document.body.classList.add("is-grabbing");
-});
-
-document.addEventListener("pointerup", () => {
-  document.body.classList.remove("is-grabbing");
-});
-
-document.addEventListener("pointercancel", () => {
-  document.body.classList.remove("is-grabbing");
-});
-
-window.addEventListener("blur", () => {
-  document.body.classList.remove("is-grabbing");
-});
-
 
 </script>
+  
+  <div class="corner-boba" aria-hidden="true">
+  <svg viewBox="0 0 32 32" role="img" aria-label="Pixel boba" shape-rendering="crispEdges">
+    <!-- Straw (outline + fill) -->
+    <rect x="15" y="2" width="2" height="10" fill="#0b0b0f"/>
+    <rect x="15" y="3" width="2" height="8" fill="#ffd1e8"/>
+    <rect x="15" y="3" width="1" height="8" fill="#fff0f7"/>
+
+    <!-- Lid (outline + fill) -->
+    <rect x="7" y="10" width="18" height="3" fill="#0b0b0f"/>
+    <rect x="8" y="11" width="16" height="1" fill="#ffd1e8"/>
+
+    <!-- Cup outline -->
+    <rect x="8" y="12" width="16" height="18" fill="#0b0b0f"/>
+
+    <!-- Cup fill + shading -->
+    <rect x="9" y="13" width="14" height="16" fill="#ff8fc5"/>
+    <rect x="18" y="13" width="5" height="16" fill="#ff6fb0"/>
+
+    <!-- Boba pearls -->
+    <rect x="11" y="24" width="2" height="2" fill="#3b1f15"/>
+    <rect x="14" y="25" width="2" height="2" fill="#3b1f15"/>
+    <rect x="17" y="24" width="2" height="2" fill="#3b1f15"/>
+    <rect x="20" y="25" width="2" height="2" fill="#3b1f15"/>
+    <rect x="12" y="27" width="2" height="2" fill="#3b1f15"/>
+    <rect x="16" y="27" width="2" height="2" fill="#3b1f15"/>
+    <rect x="19" y="27" width="2" height="2" fill="#3b1f15"/>
+
+    <!-- Little heart label (optional cute detail) -->
+    <rect x="12" y="18" width="1" height="1" fill="#fff0f7"/>
+    <rect x="14" y="18" width="1" height="1" fill="#fff0f7"/>
+    <rect x="13" y="19" width="1" height="1" fill="#fff0f7"/>
+    <rect x="13" y="20" width="1" height="1" fill="#fff0f7"/>
+  </svg>
+</div>
+
 </body>
 </html>
