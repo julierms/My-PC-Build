@@ -71,20 +71,6 @@
     a:hover{ text-decoration: underline; }
     :focus-visible{ outline:none; box-shadow: var(--focus); border-radius: 8px; }
 
-    .corner-gif{
-  position: fixed;
-  left: 16px;
-  bottom: 16px;
-  z-index: 9999;
-  pointer-events: none; /* doesn’t block clicks */
-}
-
-.corner-gif img{
-  width: 120px;        /* adjust size if you want */
-  height: auto;
-  display: block;
-  image-rendering: pixelated; /* keeps pixel-art crisp */
-}
     
     /* Layout */
     .wrap{ max-width: var(--max); margin: 0 auto; padding: 18px; }
@@ -911,8 +897,5 @@
   });
 
 </script>
-<div class="corner-gif" aria-hidden="true">
-  <img src="IMG_5130.gif" alt="" />
-  </div>
 </body>
 </html>
