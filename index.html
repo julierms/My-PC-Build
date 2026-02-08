@@ -12,45 +12,46 @@
     /* =============== */
 
     :root{
-      --bg: #ffffff;
-      --panel: #ffffff;
-      --text: #0b0b0f;
-      --muted: #5b5b66;
-      --border: #e6e6ee;
-      --shadow: 0 6px 30px rgba(0,0,0,.08);
-      --accent: #111111;
-      --accent-2: #2b2b2b;
-      --code-bg: #0b0b0f;
-      --code-text:#f6f6fb;
-      --chip:#f2f2f7;
-      --link:#111111;
-      --ok:#0f7b3b;
-      --warn:#8a5b00;
-      --bad:#a11212;
-      --focus: 0 0 0 3px rgba(0,0,0,.18);
-      --radius: 14px;
-      --radius-sm: 10px;
-      --max: 1200px;
-      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
-    }
+      /* Light mode */
+  --bg: #ffe1ee;        /* light pink page background */
+  --panel: #fff7fb;     /* slightly lighter pink-tinted panels */
+  --text: #0b0b0f;
+  --muted: #5b5b66;
+  --border: #e6e6ee;
+  --shadow: 0 6px 30px rgba(0,0,0,.08);
+  --accent: #111111;
+  --accent-2: #2b2b2b;
+  --code-bg: #0b0b0f;
+  --code-text:#f6f6fb;
+  --chip:#f2f2f7;
+  --link:#111111;
+  --ok:#0f7b3b;
+  --warn:#8a5b00;
+  --bad:#a11212;
+  --focus: 0 0 0 3px rgba(0,0,0,.18);
+  --radius: 14px;
+  --radius-sm: 10px;
+  --max: 1200px;
+  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+}
 
-    /* Dark mode (still black/white) */
-    [data-theme="dark"]{
-      --bg: #0b0b0f;
-      --panel: #101014;
-      --text: #f6f6fb;
-      --muted: #b5b5c2;
-      --border: #262633;
-      --shadow: 0 10px 40px rgba(0,0,0,.40);
-      --accent: #ffffff;
-      --accent-2: #e7e7ef;
-      --code-bg: #050507;
-      --code-text:#f6f6fb;
-      --chip:#17171e;
-      --link:#f6f6fb;
-      --focus: 0 0 0 3px rgba(255,255,255,.18);
-    }
+[data-theme="dark"]{
+  /* Dark mode */
+  --bg: #1b0b33;        /* dark purple page background */
+  --panel: #241046;     /* slightly lighter purple panels */
+  --text: #f6f6fb;
+  --muted: #c6c0d6;
+  --border: #3b2a5c;
+  --shadow: 0 10px 40px rgba(0,0,0,.45);
+  --accent: #ffffff;
+  --accent-2: #e7e7ef;
+  --code-bg: #0d0618;
+  --code-text:#f6f6fb;
+  --chip:#1e1236;
+  --link:#f6f6fb;
+  --focus: 0 0 0 3px rgba(255,255,255,.18);
+}
 
     *{ box-sizing:border-box; }
     html{ scroll-behavior:smooth; }
